@@ -20,6 +20,6 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true
 
-      - name: Run Rubocop
+      - name: Run standardrb
         run: |
-          bundle exec rubocop --format simple
+          bundle exec standardrb
