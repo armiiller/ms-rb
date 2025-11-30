@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Parse and format durations like '2h', '1.5d', '3w', '500ms' into milliseconds and back."
   spec.homepage = "https://github.com/armiiller/ms-rb"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.0"
+  spec.required_ruby_version = ">= 2.7"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
