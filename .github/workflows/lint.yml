@@ -1,4 +1,4 @@
-name: Rubocop
+name: Standardrb Lint
 
 on:
   push:

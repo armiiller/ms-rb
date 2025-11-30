@@ -4,12 +4,12 @@ module Ms
   module Rb
     module Parser
       module Units
-        S  = 1000
-        M  = S * 60
-        H  = M * 60
-        D  = H * 24
-        W  = D * 7
-        Y  = D * 365.25
+        S = 1000
+        M = S * 60
+        H = M * 60
+        D = H * 24
+        W = D * 7
+        Y = D * 365.25
         MO = Y / 12.0
       end
 
@@ -34,14 +34,14 @@ module Ms
       def parse(str)
         unless str.is_a?(String) && !str.empty? && str.length <= 100
           raise ArgumentError,
-                "Value provided must be a string between 1 and 99 chars. value=#{str.inspect}"
+            "Value provided must be a string between 1 and 99 chars. value=#{str.inspect}"
         end
 
         match = REGEX.match(str)
         return Float::NAN unless match
 
         value = match[:value].to_f
-        unit  = (match[:unit] || "ms").downcase
+        unit = (match[:unit] || "ms").downcase
 
         case unit
         when "years", "year", "yrs", "yr", "y"

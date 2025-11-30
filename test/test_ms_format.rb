@@ -16,8 +16,8 @@ class TestMsFormat < Minitest::Test
   end
 
   def test_long_supports_seconds
-    assert_equal "1 second",  Ms::Rb.format(1000, long: true)
-    assert_equal "1 second",  Ms::Rb.format(1200, long: true)
+    assert_equal "1 second", Ms::Rb.format(1000, long: true)
+    assert_equal "1 second", Ms::Rb.format(1200, long: true)
     assert_equal "10 seconds", Ms::Rb.format(10_000, long: true)
 
     assert_equal "-1 second", Ms::Rb.format(-1000, long: true)
