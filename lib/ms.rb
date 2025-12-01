@@ -6,8 +6,8 @@ require_relative "ms/rb"
 module Ms
   module_function
 
-  def ms(value, options = {})
-    Rb.ms(value, options)
+  def ms(value, **options)
+    Rb.ms(value, **options)
   end
 
   def parse(str)
@@ -18,7 +18,7 @@ module Ms
     Rb.parse_strict(str)
   end
 
-  def format(ms, options = {})
-    Rb.format(ms, options)
+  def format(ms, **options)
+    Rb.format(ms, **options)
   end
 end
